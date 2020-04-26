@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="PetalWidth <= 0.8\ngini = 0.666\nsamples = 112\nvalue = [38, 35, 39]\nclass = Iris-virginica", fillcolor="#fdfcff"] ;
+1 [label="gini = 0.0\nsamples = 38\nvalue = [38, 0, 0]\nclass = Iris-setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="PetalWidth <= 1.75\ngini = 0.499\nsamples = 74\nvalue = [0, 35, 39]\nclass = Iris-virginica", fillcolor="#f2ebfc"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="PetalLength <= 5.05\ngini = 0.149\nsamples = 37\nvalue = [0, 34, 3]\nclass = Iris-versicolor", fillcolor="#4ae78c"] ;
+2 -> 3 ;
+4 [label="PetalWidth <= 1.65\ngini = 0.056\nsamples = 35\nvalue = [0, 34, 1]\nclass = Iris-versicolor", fillcolor="#3fe685"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 33\nvalue = [0, 33, 0]\nclass = Iris-versicolor", fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label="PetalLength <= 4.75\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1]\nclass = Iris-versicolor", fillcolor="#ffffff"] ;
+4 -> 6 ;
+7 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = Iris-virginica", fillcolor="#8139e5"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = Iris-versicolor", fillcolor="#39e581"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 2]\nclass = Iris-virginica", fillcolor="#8139e5"] ;
+3 -> 9 ;
+10 [label="PetalLength <= 4.85\ngini = 0.053\nsamples = 37\nvalue = [0, 1, 36]\nclass = Iris-virginica", fillcolor="#843ee6"] ;
+2 -> 10 ;
+11 [label="SepalWidth <= 3.1\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 2]\nclass = Iris-virginica", fillcolor="#c09cf2"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 2]\nclass = Iris-virginica", fillcolor="#8139e5"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = Iris-versicolor", fillcolor="#39e581"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 34\nvalue = [0, 0, 34]\nclass = Iris-virginica", fillcolor="#8139e5"] ;
+10 -> 14 ;
+}
